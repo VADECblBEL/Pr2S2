@@ -11,6 +11,11 @@ namespace Pr2S2
             writer.WriteLine("Learning cs is fun)0)");
             writer.WriteLine("I'm done");
             writer.Close();
+
+            StreamReader reader = File.OpenText("C:\\All\\newfile.txt");
+            string contents = reader.ReadToEnd();
+            reader.Close();
+            Console.WriteLine(contents);
         }
     }
 }
